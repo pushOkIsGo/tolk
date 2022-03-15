@@ -1,0 +1,68 @@
+.banner2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height:170px;
+}
+.banner2-img{
+    width: 316px;
+    height: 170px;
+    margin-right: 15px;
+}
+.banner2-img:last-child{
+    margin-right: 0;
+}
+.banner2-img img{
+    width: 100%;
+    height: 100%;
+}
+.banner2-service{
+    width: 234px;
+    height: 170px;
+    margin-right: 14px;
+}
+.banner2-service{
+    background: #5f5750;
+    padding: 3px;
+}
+.banner2-service a{
+    color: #ccc;
+    font-size: 12px;
+}
+.banner2-service i{
+    font-size:26px;
+    display: block;
+}
+.banner2-service a:hover{
+    color: #fff;
+}
+.banner2-service a{
+    position: relative;
+    width: 76px;
+    height: 82px;
+    text-align: center;
+}
+.banner2-service a::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    left: 6px;
+    background:#665e57;
+}
+.banner2-service a::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    bottom:6px;
+    background:#665e57;
+    left: 10px;
+}
+.banner2-service a:nth-child(3n+1)::before{
+    content:none;
+}
+.banner2-service a:nth-child(n+4)::after{
+    content:none;
+}

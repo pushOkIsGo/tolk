@@ -1,0 +1,124 @@
+.header{
+    height:100px;
+    position: relative;
+    /* background-color:lightgreen; */
+}
+.header-login h1{
+    display:none;
+}
+.header-login{
+    /* display: none; */
+    background:url(../img/logo.png);
+    width: 56px;
+    height: 56px;
+    /* outline:1px solid red; */
+    background-size: 56px 56px;
+    margin-top: 22px;
+    margin-right: 172px;
+}
+.header-menu > a {
+    line-height:100px;
+    line-height:100px;
+    padding:0 10px;
+    font-size:16px;
+}
+.header-submenu{
+    position:absolute;
+    left: 0;
+    top:100px;
+    width: 100%;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding:30px 0px;
+    background:#fff;
+    z-index: 38; 
+    font-size:12px;
+    text-align:center;
+    display:none;
+}
+.header-submenu a{
+    width:204px;
+    
+}
+.header-cover img{
+    width: 160px;
+    height: 110px;
+    border-right: 1px solid #eee;
+}
+.header-name{
+    color:#333;
+}
+.price{
+    color:#ff6700;
+}
+.header-menu:hover .header-submenu {
+    display: block;
+}
+.header-search{
+    margin-top:25px;
+    position:relative;
+}
+.header-searchlabel{
+    height: 50px;
+    width: 245px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.header-searchicon{
+    font-size:20px;
+    color:#616161;
+    width:55px;
+    height:50px;
+    vertical-align: -1.7px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-left: none;
+}
+.header-searchlabel:hover{
+    border-color: #333;
+}
+.header-searchlabel:hover~.header-searchicon{
+    border-color: #333;
+}
+.header-searchicon:hover{
+    color: #fff;
+    background-color: #ff6700;
+}
+.header-searchicon:hover .header-searchlabel{
+    border-color: #333;
+}
+.header-suggest{
+    position:absolute;
+    left:0;
+    height:180px;
+    width: 245px;
+    border:1px solid #ff6700;
+    background:#fff;
+    display:none;
+    border-top:none;
+    top:50px;
+    z-index: 20;
+}
+.header-suggest a{
+    display:block;
+    height:30px;
+    line-height:30px;
+    padding-left:10px;
+    color:#333;
+}
+.header-suggest a:hover{
+    background:#eee;
+}
+.header-searchlabel:focus~.header-suggest{
+    display:block;
+}
+.header-searchlabel:focus{
+    border-color: #ff6700;
+}
+.header-searchlabel:focus~.header-searchicon{
+    border-color: #ff6700;
+}
+.header-searchicon:hover~.header-searchlabel{
+    border-color: #333;
+}
